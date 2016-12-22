@@ -13,6 +13,7 @@ ResutlDict={'Site':[],
 SourceFile="C:\\Users\dlin\Downloads\J750-59_FT1RT1_V2A0_82E1_E4.9.0_PIXEL_110416_N0BY16.00B_N0BY16.00_Nov29_2300_16.data"
 Source=open(SourceFile,"r")
 data=Source.read()
+Source.close()
 DataSplit=[]
 DataSplit=data.split("\n")
 
