@@ -19,7 +19,12 @@ Content=""
 fnames=glob("*")
 for s in fnames:
     if re.search("\.*py",s)==None:
-        Source=open(s,"r")
+        try:
+            Source=open(s,"r")
+        except PermissionError as err:
+            print(err)
+            print("Don't worry about this error.\n")
+            continue
         Content=Content+Source.read()
         Source.close()
 DataSplit=[]
