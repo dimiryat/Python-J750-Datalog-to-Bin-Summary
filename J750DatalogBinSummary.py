@@ -16,7 +16,7 @@ ResutlDict={'Site':[],
 #This block is for reading all the files' name from current folder
 #Then read all files' content to a string variable "Content" except Python related files
 Content=""
-fnames=glob("*.*")
+fnames=glob("*")
 for s in fnames:
     if re.search("\.*py",s)==None:
         Source=open(s,"r")
