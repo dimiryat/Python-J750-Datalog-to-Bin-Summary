@@ -1,5 +1,9 @@
 #J750DatalogBinSummary.py
 #Creator: Dennis Lin
+#Notice:
+#It's just a handy small tool for personal use on datalog convert
+#It might occupy huge memory due to its "not so good" algorithm
+#Just keep it in mind and be careful with it...
 
 import re
 from glob import glob
