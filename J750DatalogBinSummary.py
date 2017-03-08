@@ -4,6 +4,10 @@
 #It's just a handy small tool for personal use on datalog convert
 #It might occupy huge memory due to its "not so good" algorithm
 #Just keep it in mind and be careful with it...
+#How to execute this code:
+#See the options -> c:\folder_name>python J750DatalogBinSummary.py -h
+#Combine each site's result -> c:\folder_name>python J750DatalogBinSummary.py -c
+#Separate by site -> c:\folder_name>python J750DatalogBinSummary.py -s
 
 import re
 from glob import glob
